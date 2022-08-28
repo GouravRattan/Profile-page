@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Ver-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  background: url(./images/bg-pattern-top.svg) no-repeat left -250px bottom 250px,
+    url(./images/bg-pattern-bottom.svg) no-repeat right -250px top 330px;
+  background-color: var(--Dark-cyan);
+}
+
+.main_container {
+  width: 100%;
+  background: no-repeat;
+}
+
+.parent_container {
+  width: 370px;
+  margin: 10% auto;
+}
+
+.card {
+  width: 100%;
+  background-image: url(./images/bg-pattern-card.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.card img {
+  margin-top: 92px;
+  border-radius: 55px;
+  border: solid white 5px;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  color: var(--Ver-dark-desaturated-blue);
+}
+
+.card h3 {
+  padding-top: 25px;
+}
+
+.card p1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  margin: -15px 10px 30px 10px;
+  color: var(--Dark-gray);
+}
+
+.card p {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  padding: 8px 0px 25px 0px;
+  margin: 18px 0px 0px 10px;
+  font-size: 17px;
+  color: var(--Dark-gray);
+}
+
+.parent_container hr {
+  margin: 0;
+  padding: 0;
+  color: cyan;
+  opacity: 20%;
+}
+
+.card_child {
+  padding: 25px;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 0px 0px 15px 15px;
+  line-height: 25px;
+}
+
+.card_child p {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  color: var(--Dark-gray);
+}
+
+@media (min-width: 370px) and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  *.parent_container {
+    margin-top: 50%;
+    width: 350px;
+  }
+}
